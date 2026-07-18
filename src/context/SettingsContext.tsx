@@ -17,7 +17,7 @@ interface SettingsContextType {
 }
 
 const defaultSettings: CoachingCenterSettings = {
-  centerName: "EduTech Coaching",
+  centerName: "Sri Madhavi Computer Institute",
   address: "102 Tech Plaza, IT Hub sector, Near Metro Station, NY 10001",
   phone: "+1 (555) 234-5678",
   email: "contact@edutechcoaching.com",
