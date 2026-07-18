@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "Course": {
+      "title": "Course",
+      "description": "A computer course offered by the coaching center.",
+      "type": "object",
+      "properties": {
+        "courseId": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "duration": { "type": "string" },
+        "fees": { "type": "string" },
+        "mode": { "type": "string" },
+        "eligibility": { "type": "string" },
+        "image": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "description", "duration", "fees", "mode", "eligibility"]
+    },
+    "Certificate": {
+      "title": "Certificate",
+      "description": "Student course completion certificate details.",
+      "type": "object",
+      "properties": {
+        "certificateId": { "type": "string" },
+        "studentName": { "type": "string" },
+        "registrationNumber": { "type": "string" },
+        "certificateNumber": { "type": "string" },
+        "course": { "type": "string" },
+        "issueDate": { "type": "string" },
+        "status": { "type": "string" },
+        "certificateFile": { "type": "string" },
+        "studentPhoto": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["studentName", "registrationNumber", "certificateNumber", "course", "issueDate", "status"]
+    },
+    "Contact": {
+      "title": "Contact",
+      "description": "Student inquiries submitted via contact form.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "phone", "message"]
+    },
+    "Admin": {
+      "title": "Admin",
+      "description": "Administrator profiles with dashboard access privileges.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" }
+      },
+      "required": ["name", "email", "role"]
+    }
+  },
+  "firestore": {
+    "/courses/{courseId}": {
+      "schema": "Course",
+      "description": "Collection of courses offered by the coaching center."
+    },
+    "/certificates/{certificateId}": {
+      "schema": "Certificate",
+      "description": "Collection of certificates issued to students."
+    },
+    "/contacts/{contactId}": {
+      "schema": "Contact",
+      "description": "Inquiries and messages from prospective students."
+    },
+    "/admins/{adminId}": {
+      "schema": "Admin",
+      "description": "Registry of authenticated administrative users."
+    }
+  }
+}

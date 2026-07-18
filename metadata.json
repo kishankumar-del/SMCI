@@ -1,0 +1,6 @@
+{
+  "name": "Computer Coaching Center",
+  "description": "A modern, minimalist, and responsive computer coaching center website featuring courses, certificate verification, and an admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
