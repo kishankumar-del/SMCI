@@ -170,7 +170,7 @@ export const Home: React.FC = () => {
               {/* Fake Terminal Editor */}
               <div className="font-mono text-xs text-gray-300 space-y-3 leading-relaxed">
                 <p className="text-gray-500"># Initializing Computer Coaching Center Platform</p>
-                <p><span className="text-blue-400">import</span> edutech_coaching</p>
+                <p><span className="text-blue-400">import</span> sri_madhavi_institute</p>
                 <p><span className="text-blue-400">class</span> <span className="text-amber-300">SoftwareEngineer</span>:</p>
                 <p className="pl-4"><span className="text-blue-400">def</span> <span className="text-emerald-400">__init__</span>(self, student):</p>
                 <p className="pl-8">self.student = student</p>
